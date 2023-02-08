@@ -1,0 +1,122 @@
+body {
+    width: 90%;
+    margin: 50px;
+    background-color: #292929;
+    color: #dbdbdb;
+    font-family: "Calibri";
+}
+
+.header {
+    text-align: center;
+    font-size: 4em;
+}
+
+.task_create {
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdb;
+    margin-top: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.new_task_button {
+    margin-left: auto;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.title_box {
+    width: 30%;
+}
+
+.details_box {
+    width: 50%;
+}
+
+.priority_box {
+    width: 17.3%;
+}
+
+input {
+    box-shadow: none;
+    border: none;
+    text-align: center;
+    font-size: 1em;
+    margin-right: 1px;
+    background-color: #292929;
+    color: #dbdbdb;
+    font-family: "Calibri";
+}
+
+input:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+/* 
+***For Tasks***
+Each task will be in its own task_box div. 
+Each task_box div will have divs inside them that include task_title div, completed div, delete div, and not_complete div.
+*/
+
+.all_tasks{
+    margin-top: 30px;
+}
+
+.task_box {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task_info {
+    flex-basis: 70%;
+    text-align: left;
+}
+
+.task_title {
+    width: 40%;
+}
+
+.task_details {
+    width: 50%;
+}
+
+.task_priority {
+    width: 10%;
+}
+
+.task_actions {
+    display: flex;
+    flex-basis: 30%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.completed,
+.not_complete,
+.delete {
+    cursor: pointer;
+    margin-left: 5px;
+    justify-content: space-between;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.completed:hover,
+.not_complete:hover,
+.delete:hover,
+.new_task_button:hover {
+    background-color: #444;
+    color: #fff;
+}
